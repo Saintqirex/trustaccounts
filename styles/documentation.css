@@ -1,0 +1,56 @@
+/*main...start*/
+
+/*documentation.start*/
+
+.doc-main {
+    margin: 50px 150px;
+}
+
+.doc-h2 {
+    font-size: 50px;
+    color: #4A545E;
+    margin-top: 10px;
+}
+
+hr {
+    display: block;
+    height: 0.5px;
+    background-color: #e3e8ed;
+    border: 0;
+    border-top: 1px solid #e3e8ed;
+    margin: 20px auto;
+}
+
+.link-decoration a {
+    text-decoration: none;
+    color: #408ad4;
+    font-weight: 700;
+}
+
+.link-decoration a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin-left: 40px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+li {
+    margin: 17px auto;
+}
+/*documentation...end*/
+
+@media (max-width: 768px) {
+    .doc-main {
+        margin: 50px 20px;
+    }
+
+    .doc-h2 {
+        font-size: 35px;
+    }
+}
+
+/*main...end*/

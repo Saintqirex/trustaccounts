@@ -1,0 +1,623 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+/*header...start*/
+#container-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 85px;
+}
+
+.sizing-container {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.logo-text {
+	display: flex;
+	flex-direction: row;
+}
+
+.trust-logo {
+	width: 35px;
+	height: 100%;
+	display: block;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+.header-logo-text {
+	font-size: 20px;
+	align-self: center;
+}
+
+.signup-btn {
+	background-color: white;
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	padding: 5px; 
+}
+.signup-btn:hover {
+	color: white;
+	background-color: #0b65c6;
+	border: 3px solid white;
+}
+/*header...end*/
+
+/*main...start*/
+
+/*first section...start*/
+.section1-container {
+	width: 100%;
+	height: auto;
+}
+
+#section1-img {
+	width: 530px;
+	height: auto;
+	padding-bottom: 70px;
+	padding-top: 30px;
+	margin-right: -90px;
+}
+
+.heading-text {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+}
+
+.section1-text {
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 34px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.textimage-container {
+	display: flex;
+	flex-direction: row;
+	margin-left: 180px;
+	margin-right: 200px;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.app-store {
+	background: url('images/download_buttons.svg') 0 -50px;
+	width: 160px;
+	height: 50px;
+	margin-right: 3px;
+}
+
+.play-store {
+	background: url('images/download_buttons.svg') 0 -101px;
+	width: 160px;
+	height: 50px;
+	margin-right: 3px;
+}
+
+.android-download {
+	background: url('images/download_buttons.svg') 0 0;
+	width: 160px;
+	height: 50px;
+}
+
+svg {
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.object1 {
+	position: relative;
+	top: 90px;
+}
+
+/*first section...end*/
+
+/*second section...start*/
+
+.section2-container {
+	margin: 60px 150px;
+}
+
+.section2-img-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.section2-img {
+	width: 700px;
+	max-width: 100%;
+	height: auto;
+}
+
+.section2-text {
+	display: inherit;
+	flex-direction: column;
+	justify-content: center;
+	width: 500px;
+}
+
+.section2-h3 {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: #161C2D;
+}
+
+.section2-para {
+	display: block;
+	font-size: 20px;
+	color: #4A545E;
+}
+
+/*second section...end*/
+
+/*main...end*/
+
+
+/*footer...start*/
+
+/*top Footer...start*/
+
+.footer-container1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width:100%;
+	height: auto;
+	background-color: #F9FBFD;
+	margin: 40px auto;
+}
+
+.footer-header-text {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 29px;
+	color: #161C2D;
+	margin-right: 130px;
+}
+
+.footer-header-paragraph {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
+	color: #4A545E;
+}
+
+.footer-sub-container1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 55px 0;
+}
+
+.app-store0 {
+	background: url('images/download_buttons.svg') 0 -50px;
+	width: 160px;
+	height: 50px;
+	margin-right: 25px;
+}
+
+.play-store0 {
+	background: url('images/download_buttons.svg') 0 -101px;
+	width: 160px;
+	height: 50px;
+	margin-right: 25px;
+}
+
+.android-download0 {
+	background: url('images/download_buttons.svg') 0 0;
+	width: 160px;
+	height: 50px;
+}
+
+/*top Footer...end*/
+
+/*bottom Footer...start*/
+
+.logo-border {
+	border: 2px solid #0b65c6;
+}
+
+.bottom-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.bottom-footer-link {
+	color: #4A545E;
+	font-weight: 400;
+	display: block;
+	margin: 12px auto;
+}
+
+.bottom-footer-link:hover {
+	color: #4A545E;
+	text-decoration: underline;
+}
+/*bottom Footer...end*/
+
+.copyright {
+	color: #161C2D;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 25px;
+	margin-top: 30px;
+	text-decoration: underline;
+}
+
+
+/*footer...end*/
+
+
+/*general Styles*/
+.white-text {
+	color: #FFFFFF;
+}
+
+.black-text {
+	color: #000000;
+}
+
+
+.blue-color {
+	color: #0b65c6;
+}
+
+.background-blue {
+	background-color: #0b65c6;
+}
+
+.grey-color {
+	color: #4A545E;
+}
+
+.red-text {
+	color: red;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.justify-text {
+	text-align: justify;
+}
+
+.font {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.no-decoration {
+	text-decoration: none;
+}
+
+.italics-text {
+    font-style: italic;  
+}
+/*general Styles*/
+
+/*css loader...start*/
+#spinner-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #0b65c6;
+	opacity: 0.985;
+	z-index: 999999;
+}
+  
+.spinner {
+	margin: 100px auto;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 30%;
+}
+  
+.cube1, .cube2 {
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	-webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+	animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+	25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+	50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+	75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+	100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+	25% { 
+		transform: translateX(42px) rotate(-90deg) scale(0.5);
+		-webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+	} 
+	50% { 
+		transform: translateX(42px) translateY(42px) rotate(-179deg);
+		-webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+	} 
+	50.1% { 
+		transform: translateX(42px) translateY(42px) rotate(-180deg);
+		-webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+	} 
+	75% { 
+		transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+		-webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+	} 
+	100% { 
+		transform: rotate(-360deg);
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+  /*css loader...end*/
+
+  /*responsive....start*/
+
+@media (max-width: 1023px) {
+	/*header*/
+	.sizing-container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.header-logo-text {
+		font-size: 19px;
+	}
+
+	.signup-btn{
+		width: 100px;
+		height: 35px;
+		margin-right: 2px;
+	}
+
+	.trust-logo {
+		width: 35px;
+		display: block;
+		margin-right: 10px;
+		border-radius: 10px;
+	}
+	/*header*/
+
+	/*section1*/
+	.textimage-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-top: 20px;
+		margin-top: -1px;
+	}
+
+	.heading-text {
+		font-weight: 700;
+		font-size: 35px;
+		line-height: 38px;
+		text-align: center;
+	}
+	
+	.section1-text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		margin-top: 18px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	#section1-img {
+		max-width: 100%;
+		width: 490px;
+		height: 100%;
+		padding-bottom: 70px;
+		padding-top: 30px;
+		margin: auto 0;
+		display: block;
+	}
+
+	.app-store {
+		background: url('images/download_buttons.svg') 0 -50px;
+		width: 160px;
+		height: 50px;
+		display: block;
+		margin: 20px auto;
+	}
+	
+	.play-store {
+		background: url('images/download_buttons.svg') 0 -101px;
+		width: 160px;
+		height: 50px;
+		display: block;
+		margin: 20px auto;
+	}
+	
+	.android-download {
+		background: url('images/download_buttons.svg') 0 0;
+		width: 160px;
+		height: 50px;
+		display: block;
+		margin: 20px auto;
+	}
+
+	.object1 {
+		position: static;
+		top: 0;
+	}
+	/*section1*/
+
+	/*section2*/
+
+	.section2-container {
+		margin: 60px 20px;
+	}
+	
+	.section2-img-text {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: none;
+		align-items: center;
+		text-align: center;
+	}
+
+	#reverse {
+		flex-direction: column !important;	
+	}
+	
+	.section2-img {
+		width: 700px;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	.section2-text {
+		margin-top: 30px;
+		width: 500px;
+		max-width: 100%;
+	}
+	
+	.section2-h3 {
+		display: block;
+		margin-bottom: 20px;
+		font-size: 35px;
+	}
+	
+	.section2-para {
+		display: block;
+		font-size: 19px;
+	}
+
+	/*section2*/
+
+	/*footer*/
+
+	/*top footer...start*/
+
+.footer-container1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width:100%;
+	height: auto;
+	background-color: #F9FBFD;
+	margin: 40px auto;
+}
+
+.footer-header-text {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 29px;
+	color: #161C2D;
+	margin-right: 0;
+	text-align: center;
+}
+
+.footer-header-paragraph {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
+	color: #4A545E;
+	text-align: center;
+}
+
+.footer-sub-container1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 55px 0;
+}
+
+.pad-con {
+	margin-bottom: 28px;
+}
+
+.app-store0 {
+	background: url('images/download_buttons.svg') 0 -50px;
+	width: 160px;
+	display: block;
+	margin: 20px auto;
+	
+}
+
+.play-store0 {
+	background: url('images/download_buttons.svg') 0 -101px;
+	width: 160px;
+	height: 50px;
+	display: block;
+	margin: 20px auto;
+}
+
+.android-download0 {
+	background: url('images/download_buttons.svg') 0 0;
+	width: 160px;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+}
+	/*footer*/
+
+  }
+
+  @media (min-width: 1024px) and (max-width: 1033px) {
+	.textimage-container {
+		margin-left: 30px;
+		margin-right: 50px;
+	}
+  }
+
+  @media (min-width: 1034px) and (max-width: 1093px) {
+	.textimage-container {
+		margin-left: 40px;
+		margin-right: 60px;
+	}
+  }
+  
+  @media (min-width: 1094px) and (max-width: 1194px) {
+	.textimage-container {
+		margin-left: 70px;
+		margin-right: 90px;
+	}
+  }
+
+  @media (min-width: 1195px) and (max-width: 1313px) {
+	.textimage-container {
+		margin-left: 120px;
+		margin-right: 140px;
+	}
+  }
+  /*responsive...end*/

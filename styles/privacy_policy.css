@@ -1,0 +1,109 @@
+/*main...start*/
+
+/*privacy policy...start*/
+
+.pp-main {
+    margin: 50px 200px;
+}
+
+.pp-h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #408ad4;
+}
+
+.pp-h2-para {
+    font-size: 19px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.pp-h3 {
+	color: #408ad4; 
+	font-size: 20px;
+	line-height: 18px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	font-weight: 500;
+}
+
+.pp-para {
+	color: #4A545E;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
+    margin-bottom: 30px
+}
+
+table {
+    width: 100%;
+    display: block;
+}
+
+table, tr {
+    border: 0.5px solid #D9E2EF;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+th, td {
+    vertical-align: top;
+    padding: 30px 35px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+th {
+    vertical-align: bottom;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+td {
+    max-width: 100%;
+    text-align: left;
+    color: #161C2D;
+}
+
+
+.pp-marg-btm {
+    margin-bottom: 20px;
+}
+
+.pp-marg-top {
+    margin-top: 15px;
+}
+
+.pp-para a:link {
+    text-decoration: none;
+    color: #408ad4;
+}
+
+.pp-para a:hover {
+    text-decoration: underline;
+}
+
+/*privacy policy...end*/
+
+@media (max-width: 1000px) {
+    .pp-main {
+        margin: 50px 20px;
+    }
+
+    .pp-h2 {
+        font-size: 28px;
+    }
+
+    .pp-h2-para {
+        font-size: 18px;
+    }
+
+    table {      
+    overflow-x: scroll;
+    }
+}
+
+/*main...start*/
+

@@ -1,0 +1,52 @@
+/*Terms of Service...start*/
+
+.tos-main {
+    margin: 50px 150px;
+}
+
+.tos-h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #408ad4;
+
+}
+
+.tos-h2-para {
+    font-size: 19px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+
+.tos-h3 {
+	color: #408ad4; 
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 15px;
+	margin-bottom: 4px;
+	font-weight: 500;
+}
+
+.tos-para {
+	color: #4A545E;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 400;
+    margin-bottom: 30px
+}
+
+/*Terms of Service...end*/
+
+@media (max-width: 768px) {
+    .tos-main {
+        margin: 50px 20px;
+    }
+
+    .tos-h2 {
+        font-size: 28px;
+    }
+
+    .tos-h2-para {
+        font-size: 18px;
+    }
+}
